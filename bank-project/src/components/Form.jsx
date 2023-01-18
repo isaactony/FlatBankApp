@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 
+//creating the form component 
 const Form = ()=>{
     const [formData, setFormData] = useState({
         date: "mm/dd/yyyy",
@@ -42,15 +43,6 @@ const Form = ()=>{
     return (
     <> 
          <br></br>
-
-<div class="form-group d-flex justify-content-center">
-  <div class="form-outline w-75">
-  <input type="search" class="form-control" placeholder="Search"/>
-    <label class="form-label" for="form1"></label>
-  </div>
-  <button className="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-
-</div>
 
       
         <form className="row p-3 m-4" onSubmit={handleSubmit}>

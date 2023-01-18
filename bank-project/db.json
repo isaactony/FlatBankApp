@@ -286,6 +286,20 @@
       "category": "Enterdasd Category",
       "amount": "123",
       "id": 41
+    },
+    {
+      "date": "2023-01-14",
+      "description": "New Laptop",
+      "category": "Personal Development",
+      "amount": "5000",
+      "id": 42
+    },
+    {
+      "date": "2023-01-14",
+      "description": "New Laptop",
+      "category": "Personal Development",
+      "amount": "5000",
+      "id": 43
     }
   ]
 }
