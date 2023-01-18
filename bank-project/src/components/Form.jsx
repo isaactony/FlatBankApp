@@ -8,7 +8,7 @@ const Form = ()=>{
         category: "Enter Category",
         amount: ""
     })
-
+    //function to handle submit and persist entries 
     const handleSubmit = (event) => {
         event.preventDefault();
         setFormData({...formData})
@@ -32,14 +32,14 @@ const Form = ()=>{
     //         },
     //         body: JSON.stringify(formData),
     // }
-
+    //function to read user input
     const handleOnChange = (event) => {
         setFormData({
             ...formData,
             [event.target.name]: event.target.value
         })
     }
-
+    //dispalys input form
     return (
     <> 
          <br></br>

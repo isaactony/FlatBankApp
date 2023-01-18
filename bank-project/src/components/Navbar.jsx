@@ -1,3 +1,4 @@
+//nabar component
 const Navbar = () => {
     return (
       <nav className="navbar navbar-dark bg-dark">

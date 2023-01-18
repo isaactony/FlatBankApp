@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-
+//creating the table compnent that will render data
 const Table = ({tableContent})=> {
     const [transactions, setTransactions] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     const [filteredResults, setFilteredResults] = useState([]);
 
 
-
+    //getting data from api service
     useEffect(() => {
         fetch("http://localhost:3000/transactions")
         .then((response) => response.json())
@@ -30,7 +30,7 @@ const Table = ({tableContent})=> {
             setFilteredResults(transactions);
         }
     }
-   
+    //this displats the search and also checks if search input is more that one character and returns matching results
     return (
         <>
             <div class="form-group d-flex justify-content-center">
@@ -52,7 +52,7 @@ const Table = ({tableContent})=> {
                     </tr>
                 </thead>
                 <tbody>
-
+        
         {searchInput.length > 1 ? (
             
                     filteredResults.map((item, index)=>{
